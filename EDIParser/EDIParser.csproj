@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Code\DatabaseHelper.cs" />
     <Compile Include="Code\EdiMapping.cs" />
+    <Compile Include="Code\EdiParserHelper.cs" />
     <Compile Include="Code\FileHelper.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
