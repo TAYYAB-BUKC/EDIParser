@@ -42,6 +42,7 @@
 			this.Btn_EDIParser.TabIndex = 0;
 			this.Btn_EDIParser.Text = "Parse EDI";
 			this.Btn_EDIParser.UseVisualStyleBackColor = true;
+			this.Btn_EDIParser.Click += new System.EventHandler(this.Btn_EDIParser_Click);
 			// 
 			// listBox1
 			// 
