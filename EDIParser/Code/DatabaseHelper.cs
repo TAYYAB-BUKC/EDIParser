@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace EDIParser.Code
 {
-    public class DatabaseHelper
+	public class DatabaseHelper
     {
         public static List<EdiMapping> GetMappingsFromDb(string connectionString, int formatType)
         {
