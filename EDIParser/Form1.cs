@@ -27,7 +27,9 @@ namespace EDIParser
 			var mappings = DatabaseHelper.GetMappingsFromDb(connection, format);
 
 			var parsed = EdiParserHelper.ParseLines(content.ToList(), mappings);
-			
+
+			listBox1.Items.Clear();
+
 			foreach (var row in parsed)
 			{
 				foreach (var rowItem in row)
