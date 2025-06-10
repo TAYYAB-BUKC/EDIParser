@@ -1,5 +1,6 @@
 ﻿using EDIParser.Code;
 using System;
+using System.Configuration;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -22,7 +23,7 @@ namespace EDIParser
 			}
 
 			var content = FileHelper.ReadFile(path);
-			var connection = "";
+			var connection = Convert.ToString(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
 			var format = 1;
 			var mappings = DatabaseHelper.GetMappingsFromDb(connection, format);
 
