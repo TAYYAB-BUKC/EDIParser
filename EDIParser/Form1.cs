@@ -22,7 +22,7 @@ namespace EDIParser
 			}
 
 			var content = FileHelper.ReadFile(path);
-			var connection = "Server=DESKTOP-MTIIACB\\SQLEXPRESS;Initial Catalog=Test;Persist Security Info=False;Integrated Security = True; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;";
+			var connection = "";
 			var format = 1;
 			var mappings = DatabaseHelper.GetMappingsFromDb(connection, format);
 
